@@ -22,6 +22,11 @@ var pacman = {
     y: 1
 };
 
+var ghost = {
+    x: 8,
+    y: 8
+};
+
 function displayWorld () {
     var output = '';
         for(var i=0; i<world.length; i++) {
@@ -47,12 +52,18 @@ function displayPacman(){
     document.getElementById('pacman').style.left = pacman.x*30+"px"
 }
 
+function displayGhost(){
+    document.getElementById('ghost').style.top = ghost.y*30+"px";
+    document.getElementById('ghost').style.left = ghost.x*30+"px";
+}
+
 function displayScore(){
     document.getElementById('score').innerHTML = score;
 }
 
 displayWorld();
 displayPacman();
+displayGhost();
 
 
 document.onkeydown = function (e) {

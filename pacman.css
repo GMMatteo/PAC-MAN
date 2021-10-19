@@ -57,3 +57,13 @@ body {
     background-position: center;
     color: seashell;
 }
+
+#ghost {
+    display: inline-block;
+    background: black;
+    background-image: url('img/ghost.gif');
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+  }
